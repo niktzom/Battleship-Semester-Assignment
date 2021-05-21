@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -12,5 +13,13 @@ using namespace std;
  * @param myArraySize the size of the array to be shuffled.
  */
 template <class X> void shuffle(X** myArray, int myArraySize){
-    // TODO: Implement here the shuffle algorithm
+        
+        srand(time(NULL));
+
+        for(i=myArraySize; i>0; i--){
+            int j-rand() % (i+1);
+            swap(myArray[i],myArray[j])
+        }
+
+
 }
