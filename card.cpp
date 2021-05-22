@@ -25,8 +25,15 @@ PointCard::PointCard(int id, string text, int points):Card(id,text){
 }
 
 void PointCard::cardAction(Player* player, Player* opponent){
-    player->addPoints(points);
-    opponent->removePoints(points);
+    if(points>0)
+        player->addPoints(points);
+        opponent->removePoints(points);
+    if(points<0)
+        points=points*(-1);
+        player->removePoints(points);
+        opponent->addPoints(points);
+
+
 }
 
 MoveCard::MoveCard(int id, string text, MoveType type):Card(id,text){
