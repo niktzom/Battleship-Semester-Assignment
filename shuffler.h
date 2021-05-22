@@ -15,11 +15,10 @@ using namespace std;
 template <class X> void shuffle(X** myArray, int myArraySize){
         
         srand(time(NULL));
-        int j;
+        int i,j;
 
-        for(i=myArraySize; i>0; i--){
+        for(i=myArraySize-1; i>0; i--){
             j=rand() % (i+1);
             swap(myArray[i],myArray[j]);
         }
-
 }
