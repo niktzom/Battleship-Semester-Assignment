@@ -67,6 +67,11 @@ int main() {
                 // Perform a double hit by making a new guess
                 ((Carrier*)players[playerTurn]->getShip(0))->doubleHit();
                 Square* p = players[playerTurn]->guessSquare();
+                if(p->isHit()) {
+                    cout << "Error in guess of player " << players[playerTurn]->getName() << "! Exiting..." << endl;
+                    std::exit(0);
+                }
+                p->hitSquare();
                 cout << players[playerTurn]->getName() << " shoots at " << p->toString();
                 if (players[1 - playerTurn]->acceptHit(p->getX(), p->getY()))
                     cout << ". It's a Hit!" << endl << endl;
