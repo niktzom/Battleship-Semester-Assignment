@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cstdlib>
-#include <ctime>
 
 using namespace std;
 
@@ -14,7 +13,6 @@ using namespace std;
  */
 template <class X> void shuffle(X** myArray, int myArraySize){
         
-        srand(time(NULL));
         int i,j;
 
         for(i=myArraySize-1; i>0; i--){
