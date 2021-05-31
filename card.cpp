@@ -25,14 +25,15 @@ PointCard::PointCard(int id, string text, int points):Card(id,text){
 }
 
 void PointCard::cardAction(Player* player, Player* opponent){
-    if(points>0)
+    if(points>0){
         player->addPoints(points);
         opponent->removePoints(points);
-    if(points<0)
+    }
+    if(points<0){
         points=points*(-1);
         player->removePoints(points);
         opponent->addPoints(points);
-
+    }
 
 }
 
