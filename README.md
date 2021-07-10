@@ -3,6 +3,6 @@
 
 
 ## Contributors
-*Thanasis Tsarnadelis [@tsarnadelis](https://github.com/tsarnadelis)
+* Thanasis Tsarnadelis [@tsarnadelis](https://github.com/tsarnadelis)
 
-*Thanos Doumplis [@ThanosD1](https://github.com/ThanosD1)
+* Thanos Doumplis [@ThanosD1](https://github.com/ThanosD1)
